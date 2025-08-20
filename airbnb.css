@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #fafafa;
+  }
+ 
+    .divider {
+      height: 40px;
+      width: 1px;
+      background-color: #ccc;
+    }
+    p {
+      color: #333;
+      font-size: small;
+    }
+    
+
+  
+  
+  header {
+    background-color: white;
+    height: 190px;
+    border-bottom: 1px solid #ddd;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+   .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+  .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-left: 200px;
+    }
+    .nav-links img{
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 500;
+    }
+    .nav-links a .new {
+      background: #002244;
+      color: white;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 10px;
+    }
+     .nav-right {
+      display: flex;
+      font-size: 20px;
+      color: #555;
+      align-items: center;
+      gap: 5px;
+      margin-left: 190px;
+    }
+     .nav-right button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 50%;
+      font-size: 18px;
+    }
+
+    .nav-right button:hover {
+      background: #f5f5f5;
+    }
+    .dropdown-button:hover {
+      background: #f5f5f5;
+    }
+    .dropdown-button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 50%;
+      font-size: 18px;
+    }
+    .drop-down{
+      display: none;
+      position: absolute;
+      right: 30px;
+      top: 57px;
+      background: white;
+      min-width: 240px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      padding: 10px 0;
+    }
+    .drop-down a {
+      display: block;
+      padding: 10px 16px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+    /* .drop-down hr{
+      border: none;
+      border-top: 1px solid white;
+      margin: 8px 0;
+    } */
+    .dropdown-button:hover .drop-down{
+      display: block;
+    }
+    .highlight img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+    }
+    .highlight{
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: bold;
+    }
+    .drop-down .highlight{
+      font-weight: bold;
+    }
+    .drop-down small{
+      display: block;
+      color: #777;
+      font-size: 12px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #ff385c;
+    }
+
+  .logo img {
+      width: 30px;
+    }
+  
+  .search-bar {
+  display: flex;
+  align-items: center;
+  width: 750px;
+  margin-top: 20px;
+  margin-left: 200px;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  gap: 20px;
+  /* position: fixed;
+  top: 30px;
+  left: 250px;
+  right: 500px; */
+}
+
+.search-item {
+  padding: 10px 20px;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+
+.search-item:hover {
+  background: #f7f7f7;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+  border-radius: 30px;
+}
+
+.search-item strong {
+  display: block;
+  font-size: 12px;
+}
+
+.search-item span {
+  font-size: 14px;
+  color: gray;
+}
+
+.search-btn {
+  background: #ff385c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-btn:hover {
+  background: #e00040;
+}
+
+
+
+  
+  main {
+    padding: 2rem;
+    margin-top: -40px;
+  }
+  
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .abj {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding-top: 20px;
+  }
+  .lag {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding-top: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-content h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-content p {
+    color: #555;
+  }.listing-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); */
+    grid-template-columns: repeat(6, 1fr);
+    position: absolute;
+    gap: 24px;
+    padding-top: 20px;
+  }
+  
+  .listing-item h3 {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .listing-item p {
+    font-size: 13px;
+    color: #555;
+    margin: 4px 0 0;
+  }
+  .listing-item:hover {
+    color: #555;
+    cursor: pointer;
+  }
+  .tab {
+    padding: 20px;
+  }
+  .tab a {
+    text-decoration: none;
+    color: black;
+  }
+  .listing-grid{
+    display: none;
+    position: absolute;
+    /* left:-20%; */
+  }
+  .tab:hover .listing-grid{
+    display: grid;
+  }
+  .tabs {
+    display: flex;
+    position: relative;
+  }
+.unique{
+  left:-0.6%
+}
+.categories{
+  left:-1%
+}
+.transport{
+  left:-1%
+}
+
+h1 {
+  padding-top: 20px;
+}
+.footer {
+  padding: 20px;
+}
+.help{
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+}
+.help:hover {
+  text-decoration: underline;
+}

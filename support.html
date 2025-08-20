@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+<style>
+    header {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .search-bar {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 20px;
+  margin-left: 340px;
+  transform: translate(20%, 20%);
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  padding: 28px;
+}
+.greeting {
+    font-size: 39px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bttn button {
+    position: absolute;
+    background-color: #ff385c;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+.bttn button:hover {
+    background-color: #d42b4a;
+}
+.bttn button a{
+    text-decoration: none;
+    color: white;
+}
+.search {
+    position: relative;
+}
+
+.element {
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    background-color: #ff385c;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 450px;
+    margin-top: 28px;
+}
+.element:hover {
+    background-color: #d42b4a;
+}
+</style>
+<body>
+    <header>
+    <h2 style="font-family: Arial, Helvetica, sans-serif;">Help center</h2>
+    
+    <div class="container">
+        <h1 class="greeting">Hi, how can we help?</h1>
+        <div class="search">
+            <input type="text" placeholder="Start your search.." class="search-bar">
+            <button class="element"><span class="material-symbols-outlined">search</span></button>
+            </div>
+        </header>
+    </div>
+    <div class="bttn">
+     <button type="submit"><a href="login.html" target="_blank">Log in or sign up</a></button>
+     </div>
+</body>
+</html>
